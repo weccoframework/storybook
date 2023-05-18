@@ -1,0 +1,24 @@
+{
+  "name": "@weccoframework/storybook",
+  "version": "0.1.0",
+  "description": "Storybook for wecoo: Develop wecco view functions and components in isolation with Hot Reloading.",
+  "keywords": [
+    "storybook",
+    "weccoframework"
+  ],
+  "homepage": "https://github.com/weccoframework/storybook",
+  "bugs": {
+    "url": "https://github.com/weccoframework/storybook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weccoframework/storybook.git"
+  },
+  "license": "Apache 2.0",
+  "engines": {
+    "node": "^14.18 || >=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
