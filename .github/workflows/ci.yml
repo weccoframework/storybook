@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node }}
-      
+
     - name: [vite] Install dependencies
       run: npm install
       working-directory: ./packages/vite
