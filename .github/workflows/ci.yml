@@ -23,17 +23,17 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
 
-    - name: [vite] Install dependencies
+    - name: "[vite] Install dependencies"
       run: npm install
       working-directory: ./packages/vite
-    - name: [vite] Build assembly
+    - name: "[vite] Build assembly"
       run: npm run build
       working-directory: ./packages/vite
 
-    - name: [renderer] Install dependencies
+    - name: "[renderer] Install dependencies"
       run: npm install
       working-directory: ./packages/renderer
-    - name: [renderer] Build assembly
+    - name: "[renderer] Build assembly"
       run: npm run build
       working-directory: ./packages/renderer
 
