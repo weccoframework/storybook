@@ -15,7 +15,8 @@
     "strictBindCallApply": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "noUnusedLocals": true,
-    "declaration": true
+    "declaration": true,
+    "outDir": "./dist"
   },
   "exclude": ["dist", "**/dist", "node_modules", "**/node_modules", "**/setup-jest.ts"],
   "ts-node": {

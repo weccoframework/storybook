@@ -1,7 +1,7 @@
 {
   "name": "@weccoframework/storybook",
   "version": "0.1.0",
-  "description": "Storybook for wecoo: Develop wecco view functions and components in isolation with Hot Reloading.",
+  "description": "Storybook for wecco: Develop wecco view functions and components in isolation with Hot Reloading.",
   "keywords": [
     "storybook",
     "weccoframework"
@@ -18,7 +18,8 @@
   "engines": {
     "node": "^14.18 || >=16"
   },
-  "publishConfig": {
-    "access": "public"
-  }
+  "workspaces": [
+    "./packages/renderer",
+    "./packages/vite"
+  ]
 }

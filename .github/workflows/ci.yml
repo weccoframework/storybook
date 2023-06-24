@@ -23,17 +23,8 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
 
-    - name: "[vite] Install dependencies"
+    - name: "Install dependencies"
       run: npm install
-      working-directory: ./packages/vite
+
     - name: "[vite] Build assembly"
-      run: npm run build
-      working-directory: ./packages/vite
-
-    - name: "[renderer] Install dependencies"
-      run: npm install
-      working-directory: ./packages/renderer
-    - name: "[renderer] Build assembly"
-      run: npm run build
-      working-directory: ./packages/renderer
-
+      run: npm run build --workspaces --if-present

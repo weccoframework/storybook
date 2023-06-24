@@ -1,4 +1,4 @@
-import typescript from "rollup-plugin-typescript2"
+import typescript from "@rollup/plugin-typescript"
 
 export default [
     {
@@ -21,10 +21,8 @@ export default [
 
         plugins: [
             typescript({
-                tsconfigOverride: {
-                    compilerOptions: {
-                        module: "ESNext",
-                    },
+                compilerOptions: {
+                    module: "ESNext",
                 },
             }),
         ]
@@ -49,10 +47,8 @@ export default [
 
         plugins: [
             typescript({
-                tsconfigOverride: {
-                    compilerOptions: {
-                        module: "ESNext",
-                    },
+                compilerOptions: {
+                    module: "ESNext",
                 },
             }),
         ]
